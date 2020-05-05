@@ -41,6 +41,9 @@ names = list(set(names_bio) | set(names_cran))
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+
+app.config.suppress_callback_exceptions = True
 
 app.layout = html.Div(
     [
@@ -55,7 +58,8 @@ app.layout = html.Div(
         ),
 
         html.Div(
-            id='output_div'
+            id='output_div',
+            style={'padding': 10}
         )
 
     ],
