@@ -1,12 +1,5 @@
-# skeletor-public
+# rpkg
 
-A template for public repositories. 
+A simple Dash front end that checks whether the users desired R package name is already a package on [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html) or [Bioconductor](https://www.bioconductor.org/packages/release/BiocViews.html#___Software). Uses the latest data from each site.  
 
-## Steps
-
-1. First decide whether the LICENSE should be Open Government Licence (OGL) Version 3 (default) or MIT
-2. Edit the CONTRIBUTING.md file
-3. Review each file before adding to this repository; ensure no usernames, machine names etc are included
-4. Review all comments
-5. Review TODOs
-6. Create a Release
+Front end has been uploaded to [Google Cloud Platform]().
